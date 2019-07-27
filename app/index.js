@@ -16,7 +16,7 @@ app.get('/blocks', (req, res) => {
 app.post('/mine', (req, res) => {
     const block = blockchain.addBlock(req.body.data)
     console.log(`New block added: ${block.toString()}`)
-    res.redirect('/blocks')
+    res.redirect(' /blocks')
 })
 
 app.listen(HTTP_PORT, () => console.log(`Example app listening on port ${HTTP_PORT} !`))
